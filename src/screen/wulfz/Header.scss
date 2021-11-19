@@ -1,139 +1,140 @@
 .headerContainer {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  .headerBar {
-    z-index: 99;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 128px;
-    background: #bc9266;
-    border: 3px solid #262119;
-    box-sizing: border-box;
-    box-shadow: inset -3px -3px 0px #debe88, inset 3px 3px 0px #debe88;
-  }
+	.headerBar {
+		z-index: 99;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+		background: #bc9266;
+		border: 3px solid #262119;
+		box-sizing: border-box;
+		box-shadow: inset -3px -3px 0px #debe88, inset 3px 3px 0px #debe88;
+	}
 
-  .headerOther {
-    display: none;
-  }
+	.headerOther {
+		display: none;
+	}
 
-  .headerTop {
-    position: absolute;
-    top: 40px;
-    width: 600px;
-  }
+	.headerTop {
+		position: absolute;
+		top: 40px;
+		width: 600px;
+	}
 
-  .headerSticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+	.headerSticky {
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
 
-  .social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    margin-left: 32px;
-  }
+	.social {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 16px;
+		margin-left: 32px;
+	}
 
-  .wallet-connect {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 16px;
-    margin-right: 32px;
-  }
+	.wallet-connect {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: 16px;
+		margin-right: 32px;
+	}
 }
 
 .connectButton {
-  background-size: 100% 100%;
-  /* -webkit-text-stroke-width: 2px;
+	background-size: 100% 100%;
+	/* -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: black;
       -moz-text-stroke-width: 2px;
       -moz-text-stroke-color: black; */
-  text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
-    3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
-  font-family: wolf-font;
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+		3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+	font-family: wolf-font;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .connectButton:hover {
-  opacity: 0.5;
-  cursor: pointer;
+	opacity: 0.5;
+	cursor: pointer;
 }
 
 .connectButton:active {
-  margin-top: 2px;
-  cursor: pointer;
+	margin-top: 2px;
+	cursor: pointer;
 }
 
 @media only screen and (max-width: 1023px) {
-  .headerContainer {
-    padding-left: 0;
-    padding-right: 0;
-    z-index: 99;
+	.headerContainer {
+		padding-left: 0;
+		padding-right: 0;
+		z-index: 99;
 
-    .headerBar {
-      display: none;
-    }
+		.headerBar {
+			display: none;
+		}
 
-    .headerOther {
-      position: fixed;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-      background-color: #bc9266;
-      z-index: 99;
+		.headerOther {
+			position: fixed;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			background-color: #bc9266;
+			z-index: 99;
 
-      .close {
-        font-family: wolf-font;
-        font-size: 32px;
-        color: white;
-        text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
-          3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
-      }
+			.close {
+				font-family: wolf-font;
+				font-size: 32px;
+				color: white;
+				text-shadow: -3px -3px 2px #000, 3px -3px 2px #000,
+					-3px 3px 2px #000, 3px 3px 2px #000, 3px 0 2px #000,
+					0 3px 2px #000;
+			}
 
-      .topBar {
-        width: 100%;
-        height: 80px;
-        background-color: #bc9266;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
+			.topBar {
+				width: 100%;
+				height: 80px;
+				background-color: #bc9266;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
 
-      .topBarSelected {
-        background-color: #A07446;
-      }
+			.topBarSelected {
+				background-color: #a07446;
+			}
 
-      .hamContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 24px;
-        padding-bottom: 24px;
+			.hamContainer {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 24px;
+				padding-bottom: 24px;
 
-        .social {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          margin-top: 24px;
-          margin-bottom: 24px;
-          margin-left: 0;
-          gap: 24px;
-        }
-      }
-    }
-  }
+				.social {
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+					margin-top: 24px;
+					margin-bottom: 24px;
+					margin-left: 0;
+					gap: 24px;
+				}
+			}
+		}
+	}
 }
