@@ -1,0 +1,44 @@
+.topBar {
+  display: flex;
+  flex-direction: row;
+
+  .topItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    p.txt {
+      margin-bottom: 0;
+      font-family: wolf-font;
+      font-size: 24px;
+      text-align: center;
+      color: white;
+      text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+        3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+    }
+
+    .bottom {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: -12px;
+
+      .backImg {
+        width: 178px;
+        height: 64px;
+        margin-left: -24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-family: wolf-font;
+          font-size: 24px;
+          text-align: center;
+          color: white;
+        }
+      }
+    }
+  }
+}

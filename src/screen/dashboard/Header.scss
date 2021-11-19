@@ -1,0 +1,77 @@
+.headerContainer1 {
+  display: none;
+}
+
+@media only screen and (max-width: 1023px) {
+  .headerContainer1 {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+
+    .headerOther {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background-color: #bc9266;
+
+      .close {
+        font-family: wolf-font;
+        font-size: 32px;
+        color: white;
+        text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+          3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+      }
+
+      .topBar {
+        width: 100%;
+        height: 80px;
+        background-color: #bc9266;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .title {
+        font-family: wolf-font;
+        font-size: 40px;
+        margin-top: 12px;
+        margin-bottom: 12px;
+        color: white;
+        text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+          3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+      }
+
+      .val {
+        font-family: wolf-font;
+        font-size: 21px;
+        text-align: center;
+        margin-bottom: 24px;
+        color: black;
+      }
+
+      .topBarSelected {
+        background-color: #a07446;
+      }
+
+      .hamContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        padding-bottom: 24px;
+
+        .social {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 24px;
+          margin-bottom: 24px;
+          margin-left: 0;
+          gap: 24px;
+        }
+      }
+    }
+  }
+}

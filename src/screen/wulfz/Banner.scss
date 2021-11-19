@@ -1,0 +1,130 @@
+.bannerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .bannerPaper {
+    width: 600px;
+    height: auto;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .wolfAvatar {
+      width: 200px;
+      height: 200px;
+    }
+
+    .wulfz-txt-header {
+      margin-top: 140px;
+      margin-bottom: 20px;
+      width: 180px;
+    }
+
+    p {
+      text-align: center;
+      margin: 0;
+      margin-top: 40px;
+      padding-left: 72px;
+      padding-right: 72px;
+      font-family: Nokia;
+      font-size: 21px;
+      line-height: 32px;
+      span {
+        color: #0084ff;
+      }
+    }
+
+    .mintPackage {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 40px;
+
+      .wolfButton {
+        background-size: 100% 100%;
+        /* -webkit-text-stroke-width: 2px;
+          -webkit-text-stroke-color: black;
+          -moz-text-stroke-width: 2px;
+          -moz-text-stroke-color: black; */
+        text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+          3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+        font-family: wolf-font;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        width: 200px;
+        height: 108px;
+        font-size: 42px;
+      }
+
+      .wolfButton:hover {
+        margin-top: 1px;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .wolfButton:active {
+        margin-top: 2px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .bannerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .bannerPaper {
+      margin-top: 60;
+      background-image: none !important;
+      width: auto;
+      height: auto;
+
+      .wulfz-txt-header {
+        margin-top: 0;
+        width: 40%;
+      }
+
+      .wolfAvatar {
+        width: 40%;
+        height: auto;
+      }
+
+      p {
+        text-align: center;
+        margin: 0;
+        margin-top: 32px;
+        padding-left: 24px;
+        padding-right: 24px;
+        font-family: Nokia;
+        font-size: 21px;
+        line-height: 32px;
+        span {
+          color: #0084ff;
+        }
+      }
+
+      .mintPackage {
+        margin-top: 20px;
+        gap: 20px;
+
+        .wolfButton {
+          width: 170px;
+          height: 78px;
+          margin: 4px;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}

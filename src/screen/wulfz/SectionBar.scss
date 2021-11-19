@@ -1,0 +1,37 @@
+.sectionBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 128px;
+  background: #bb5c4b;
+  border: 3px solid #262119;
+  box-sizing: border-box;
+  box-shadow: inset -3px -3px 0px #c87c6f, inset 3px 3px 0px #8d4235;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  p {
+    font-family: wolf-font;
+    font-size: 43px;
+    color: white;
+    text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+      3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .sectionBar {
+    height: 60px;
+    justify-content: center;
+
+    p {
+      font-size: 25px;
+    }
+
+    .svg {
+      display: none;
+    }
+  }
+}

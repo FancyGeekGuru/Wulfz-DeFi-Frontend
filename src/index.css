@@ -1,13 +1,28 @@
+@font-face {
+  font-family: "wolf-font";
+  src: url("./assets/fonts/upheavtt.ttf");
+}
+
+@font-face {
+  font-family: "Pixelmania";
+  src: url("./assets/fonts/Pixelmania.ttf");
+}
+
+@font-face {
+  font-family: "GameOver";
+  src: url("./assets/fonts/gameovercre1.ttf");
+}
+
+@font-face {
+  font-family: "Nokia";
+  src: url("./assets/fonts/nokiafc22.ttf");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }

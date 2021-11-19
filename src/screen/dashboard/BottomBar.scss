@@ -1,0 +1,80 @@
+.bottomBar {
+  margin-top: 64px;
+  display: flex;
+  gap: 48px;
+
+  .staking {
+    background-repeat: no-repeat;
+    width: 373px;
+    height: 422px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-family: wolf-font;
+      font-size: 32px;
+      text-align: center;
+      margin-top: 0;
+      color: white;
+      text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+        3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+    }
+
+    .stakingItem {
+      display: flex;
+      flex-direction: column;
+
+      .txt {
+        font-family: wolf-font;
+        font-size: 24px;
+        text-align: center;
+        margin-top: 0;
+        color: white;
+        text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+          3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+      }
+
+      .val {
+        font-family: wolf-font;
+        font-size: 16px;
+        text-align: center;
+        margin-top: 0;
+        color: black;
+      }
+    }
+
+    .txt {
+      font-family: wolf-font;
+      font-size: 24px;
+      text-align: center;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: white;
+      text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+        3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+    }
+
+    .inputBlue {
+      width: 261px;
+      height: 64px;
+      border: 3px solid #204535;
+      opacity: 0.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .inputRed {
+      width: 261px;
+      height: 64px;
+      border: 3px solid #c12e35;
+      opacity: 0.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.sideBar {
+  width: 244px;
+  height: 100%;
+  background-color: #bc9266;
+  border-right: 7px solid #262119;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .top {
+    margin-top: 24px;
+
+    .menuItem {
+      font-family: wolf-font;
+      font-size: 26px;
+      text-align: center;
+      color: white;
+      text-shadow: -3px -3px 2px #000, 3px -3px 2px #000, -3px 3px 2px #000,
+        3px 3px 2px #000, 3px 0 2px #000, 0 3px 2px #000;
+
+      p {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+      }
+    }
+
+    .activeItem {
+      background-color: #debe88;
+      border-left: 7px solid #0084ff;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+
+    .selectedItem {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) { 
+  .sideBar {
+    display: none;
+  }
+}
