@@ -2,6 +2,7 @@ import wolfImg from "../../assets/wolf-avatar/gif/avatar (1).gif";
 import wulfzTxt from "../../assets/letter/wulfz.png";
 import wolfButton from "../../assets/ico/default.svg";
 import bannerPaper from "../../assets/background/banner-paper.svg";
+import Wrapper from "../../assets/wolf-avatar/galleryWrap.png";
 
 import "./Banner.scss";
 
@@ -46,7 +47,17 @@ export default function Banner() {
 }
 
 function WolfAvatar() {
-  return <img src={wolfImg} className="wolfAvatar" />;
+  return (
+    <div
+      style={{
+        backgroundImage: `url(${Wrapper})`,
+        backgroundSize: "100% 100%",
+      }}
+      className="wolfAvatar"
+    >
+      <img src={wolfImg} />
+    </div>
+  );
 }
 
 function WolfBtn({ txt }) {

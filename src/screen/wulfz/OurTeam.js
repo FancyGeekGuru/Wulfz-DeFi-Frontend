@@ -2,7 +2,7 @@ import artist from "../../assets/cubz-avatar/artist.png"
 import developer from "../../assets/cubz-avatar/developer.png"
 import founder from "../../assets/cubz-avatar/founder.png"
 import partner from "../../assets/cubz-avatar/partner.png"
-import quote from "../../assets/cubz-avatar/quote.svg"
+import quote from "../../assets/cubz-avatar/quote.png"
 import teamBottom from "../../assets/cubz-avatar/bottom.png"
 
 import Background from "../../assets/cubz-avatar/back.jpg"
@@ -46,16 +46,40 @@ export default function OurTeam() {
 			className="teamContainer"
 			style={{
 				backgroundImage: `url(${Background})`,
+				backgroundSize: "100% 100%",
 			}}
 		>
 			<div className="teamWrapper">
-				{members.map((member) => (
-					<TeamMember {...member} />
-				))}
+				<div className="group2Container">
+					<div className="group2Wrapper">
+						<TeamMember {...members[0]} />
+						<TeamMember {...members[1]} />
+					</div>
+					<img
+						src={teamBottom}
+						style={{ height: "64px", width: "100%" }}
+						className="bottomImgW"
+					/>
+				</div>
+				<div className="group2Container">
+					<div className="group2Wrapper">
+						<TeamMember {...members[2]} />
+						<TeamMember {...members[3]} />
+					</div>
+					<img
+						src={teamBottom}
+						style={{ height: "64px", width: "100%" }}
+						className="bottomImgW"
+					/>
+				</div>
 			</div>
 			<img
 				src={teamBottom}
-				style={{ height: "64px", width: "100%" }}
+				style={{
+					height: "64px",
+					width: "100%",
+					marginBottom: "-4px",
+				}}
 				className="bottomImgT"
 			/>
 		</div>

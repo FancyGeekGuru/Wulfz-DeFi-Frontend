@@ -1,26 +1,64 @@
+@media only screen and (max-width: 1640px) {
+  .teamContainer {
+    background-image: url("../../assets/background/roadMap.png") !important;
+    background-size: 100% 100%;
+  }
+
+  .teamContainer .teamWrapper {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .teamContainer .teamWrapper .group2Container {
+    width: 100%;
+  }
+
+  .teamContainer .teamWrapper .group2Wrapper {
+    width: 100%;
+    gap: 20% !important;
+  }
+
+  .teamContainer .teamWrapper .wrapper {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .teamContainer .bottomImgT {
+    display: none;
+  }
+
+  .bottomImgW {
+    display: flex !important;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
-	.teamContainer {
-		background-image: url("../../assets/background/roadMap.png") !important;
-		background-size: 100% 100%;
-	}
+  .teamContainer {
+    background-image: url("../../assets/background/roadMap.png") !important;
+    background-size: 100% 100%;
+  }
 
-	.teamContainer .teamWrapper {
-		justify-content: center;
-		padding-left: 0;
-		padding-right: 0;
-	}
+  .teamContainer .teamWrapper .group2Wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
-	.teamContainer .teamWrapper .wrapper {
-		width: 100%;
-		margin-left: 0;
-		margin-right: 0;
-	}
+  .teamContainer .teamWrapper .wrapper {
+    width: 100% !important;
+    margin-left: 0;
+    margin-right: 0;
+  }
 
-	.teamContainer .teamWrapper .wrapper .bottomImg {
-		display: flex;
-	}
+  .bottomImg {
+    display: flex !important;
+  }
 
-	.teamContainer .bottomImgT {
-		display: none;
-	}
+  .bottomImgT {
+    display: none;
+  }
+
+  .bottomImgW {
+    display: none !important;
+  }
 }

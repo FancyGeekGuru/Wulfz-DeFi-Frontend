@@ -5,6 +5,7 @@ import Fire from "../../assets/wolf-avatar/gif/avatar (2).gif";
 import Laser from "../../assets/wolf-avatar/gif/avatar (3).gif";
 import Command from "../../assets/wolf-avatar/gif/avatar (4).gif";
 import Default from "../../assets/wolf-avatar/gif/avatar (5).gif";
+import Wrapper from "../../assets/wolf-avatar/galleryWrap.png";
 
 export default function Gallery() {
   return (
@@ -37,7 +38,13 @@ export default function Gallery() {
 
 function WolfAvatar(props) {
   return (
-    <div className="wolfItem">
+    <div
+      className="wolfItem"
+      style={{
+        backgroundImage: `url(${Wrapper})`,
+        backgroundSize: "100% 100%",
+      }}
+    >
       <img src={props.src} className="wolfAvatar" />
     </div>
   );
