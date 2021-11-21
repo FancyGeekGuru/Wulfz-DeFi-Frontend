@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1024px) {
+	.teamContainer {
+		background-image: url("../../assets/background/roadMap.png") !important;
+		background-size: 100% 100%;
+	}
+
+	.teamContainer .teamWrapper {
+		justify-content: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.teamContainer .teamWrapper .wrapper {
+		width: 100%;
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.teamContainer .teamWrapper .wrapper .bottomImg {
+		display: flex;
+	}
+
+	.teamContainer .bottomImgT {
+		display: none;
+	}
+}

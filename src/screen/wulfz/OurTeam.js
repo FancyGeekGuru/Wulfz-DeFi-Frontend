@@ -8,6 +8,7 @@ import teamBottom from "../../assets/cubz-avatar/bottom.png"
 import Background from "../../assets/cubz-avatar/back.jpg"
 
 import "./OurTeam.scss"
+import "./OurTeam.css"
 
 export default function OurTeam() {
 	const members = [
